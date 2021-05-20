@@ -1,0 +1,109 @@
+.wrapper {
+background-color: orange;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: auto:
+}
+
+.logo {
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  font-size: 24px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333;
+  text-align: right;
+}
+
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  pading: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+li{
+  float: left;
+  text-align: right;
+}
+
+
+li a{
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+a:hover {
+  background-color: red;
+}
+
+
+.titel{
+  padding: 150px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+ }
+
+
+.button1 {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 14px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.container {
+margin: 50px;
+
+}
+
+.row {
+  padding: 150px 150px 75px;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  display: grid;
+}
+
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  background-color: #bbbbbb;
+  padding: 10px;
+  height: 700px;
+}
+
+.portfolio > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+.portfolio > h3 {
+}
