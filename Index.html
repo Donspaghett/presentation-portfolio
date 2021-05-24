@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="style.css">
 
 
-<!--link til social buttons-->
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-
-
 <!-- tekst styling -->
     <style>
     p{
@@ -21,6 +15,8 @@
     h1{
       font-family: arial, helvetica, sans-serif;}
     h2{
+      font-family: arial, helvetica, sans-serif;}
+    h3{
       font-family: arial, helvetica, sans-serif;}
     h4{
       font-family: arial, helvetica, sans-serif;}
@@ -34,7 +30,7 @@
 <body>
 
 
-<!-- Header -->
+<!-- Header: indeholder nav og forsidebillede m. titel -->
 
 
 <div class="wrapper">
@@ -42,28 +38,30 @@
 
   <header class="header">
 
-<!--logo-->
 
-    <div class="logo">
-    <p>logo</p>
-    </div>
+    <!-- Navigationsbar - som også indeholder logo-->
 
 
-<!-- Navigation bar -->
+    <nav>
+
+      <!--logo-->
+      <a href="#top">
+        <img src="malthelogo.png" href="#top" alt="logo">
+      </a>
 
 
-  <nav>
+        <ul>
+          <li><a href="#top"> HOME </a></li>
+          <li><a href="#portfolio"> PORTFOLIO </a></li>
+          <li><a href="#me"> ME </a></li>
+          <li><a href="#contact"> CONTACT </a></li>
+        </ul>
 
-      <ul>
-        <li><a href="#Home"> HOME </a></li>
-        <li><a href="#Portfolio"> PORTFOLIO </a></li>
-        <li><a href="#Me"> ME </a></li>
-        <li><a href="#Contact"> CONTACT </a></li>
-      </ul>
-
-  </nav>
+    </nav>
 
   </header>
+
+
 
   <div class="titel">
 
@@ -71,7 +69,10 @@
 
     <h1>MALTHE ROLAND</h1>
 
-  <button class="button" type="button" name="button">MORE</button>
+    <a href="#me">
+      <button class="button" type="button" name="button">MORE</button>
+    </a>
+
   </div>
 
 </div>
@@ -82,57 +83,57 @@
 <div class="container">
 
   <div class="row">
-    <h1>PORTFOLIO</h1>
+    <h1 id="portfolio">PORTFOLIO</h1>
   </div>
 
-<!-- grid system -->
+  <!-- grid system -->
 
-<div class="portfolio">
-
-    <div class="grid-item">
-      <div class="image-container">
-        <img src="yellowflower.jpg" alt="flower" style="width:100%">
-    </div>
-      <h4>materiale</h4>
-    </div>
+  <div class="portfolio">
 
     <div class="grid-item">
       <div class="image-container">
-        <img src="yellowflower.jpg" alt="flower" style="width:100%">
-    </div>
-      <h4>materiale</h4>
+        <img src="productroskilde1.jpg" alt="project">
+        <h4>PRODUCT PHOTOGRAPHY</h4>
+      </div>
     </div>
 
     <div class="grid-item">
       <div class="image-container">
-        <img src="yellowflower.jpg" alt="flower" style="width:100%">
-    </div>
-      <h4>materiale</h4>
-    </div>
-
-    <div class="grid-item">
-      <div class="image-container">
-        <img src="yellowflower.jpg" alt="flower" style="width:100%">
-    </div>
-      <h4>materiale</h4>
+        <img src="GAFFApostercover.jpg" alt="project">
+        <h4>GRAPHICAL DESIGN</h4>
+      </div>
     </div>
 
     <div class="grid-item">
       <div class="image-container">
-        <img src="yellowflower.jpg" alt="flower" style="width:100%">
-    </div>
-      <h4>materiale</h4>
+        <img src="DIN1.png" alt="project">
+        <h4>WEB-DESIGN</h4>
+      </div>
     </div>
 
     <div class="grid-item">
       <div class="image-container">
-        <img src="yellowflower.jpg" alt="flower" style="width:100%">
+        <img src="napoleon.jpg" alt="Napoleon">
+        <h4>ANIMATION</h4>
+      </div>
     </div>
-      <h4>materiale</h4>
+
+    <div class="grid-item">
+      <div class="image-container">
+        <img src="yellowflower.jpg" alt="photo">
+        <h4>PORTRAIT PHOTOGRAPHY</h4>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-container">
+        <img src="record.jpg" alt="record">
+        <h4>VIDEO MAKING</h4>
+      </div>
     </div>
 
 
-</div>
+  </div>
 
 </div>
 
@@ -140,43 +141,54 @@
 
 <div class="me">
 
-  <h1>ME</h1>
 
-    <div class="mesection">
-      <img class="cirkel" src="malthe.jpg" alt="cirkel">
+  <h1 id="me">ME</h1>
 
-    </div>
-  <h2>Multimedia Designer</h2>
-  <p>ladidaladida ladidaladida ladidaladida ladidaladida
-  ladidaladida ladidaladida ladidaladida ladidaladida </p>
+  <div class="mesection">
+    <img class="cirkel" src="malthe1.jpg" alt="cirkel">
+  </div>
+
+  <h2>Malthe Roland</h2>
+
+  <h3>Multimedia Designer</h3>
+
+  <p>
+  ladidaladida ladidaladida ladidaladida ladidaladida
+  ladidaladida ladidaladida ladidaladida ladidaladida
+  </p>
+
 </div>
 
 
 <!-- kontaktformular-->
 
 <div class="row">
-  <h1>CONTACT</h1>
+
+  <h1 id="contact">CONTACT</h1>
 
 </div>
 
 <div class="contact-form">
+
+
   <form id="contact-form" method="post">
 
     <input name="Name" type="text" class="form-control" placeholder="Your Name" required>
 
-  <br>
+    <br>
+
     <input name="email" type="email" class="form-control" placeholder="Your Email" required>
 
+    <br>
 
-  <br>
+    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
 
-      <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
-  <br>
+    <br>
 
     <input type="submit" class="form-control submit" value="SEND MESSAGE">
 
 
-</form>
+  </form>
 
 </div>
 
@@ -187,16 +199,23 @@
   <div class="mediarow">
 
     <ul>
-      <li><a href="https://www.instagram.com/maltheroland/"><img src="instagramlogo.png"
-        alt="IG"> </a>
+      <li>
+
+        <a href="https://www.instagram.com/maltheroland">
+          <img src="instagramlogo.png" alt="IG">
+        </a>
+
       </li>
 
       <li>
-        <a href="https://www.linkedin.com/in/malthe-rasmussen-470ab5180/"><img src="linkedinlog.png"
-          alt="LI"> </a>
-      </li>
 
-</div>
+        <a href="https://www.linkedin.com/in/malthe-rasmussen470ab5180/">
+          <img src="linkedinlog.png" alt="LI">
+        </a>
+
+      </li>
+    </ul>
+
   </div>
 
 
@@ -213,5 +232,5 @@
 
 
 
-  </body>
+</body>
 </html>
