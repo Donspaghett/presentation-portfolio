@@ -6,22 +6,27 @@
     <meta charset="utf-8">
     <title>Malthe Roland</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<!-- tekst styling -->
+    <!-- tekst styling -->
     <style>
-    p{
-      font-family: arial, helvetica, sans-serif;}
-    h1{
-      font-family: arial, helvetica, sans-serif;}
-    h2{
-      font-family: arial, helvetica, sans-serif;}
-    h3{
-      font-family: arial, helvetica, sans-serif;}
-    h4{
-      font-family: arial, helvetica, sans-serif;}
-    ul{
-      font-family: arial, helvetica, sans-serif;}
+      @media screen and (max-width: 600px) {
+        body {font-size: 10px;}
+      }
+
+      p{
+        font-family: arial, helvetica, sans-serif;}
+      h1{
+        font-family: arial, helvetica, sans-serif;}
+      h2{
+        font-family: arial, helvetica, sans-serif;}
+      h3{
+        font-family: arial, helvetica, sans-serif;}
+      h4{
+        font-family: arial, helvetica, sans-serif;}
+      ul{
+        font-family: arial, helvetica, sans-serif;}
     </style>
 
 
@@ -30,7 +35,7 @@
 <body>
 
 
-<!-- Header: indeholder nav og forsidebillede m. titel -->
+<!-- Header: indeholder nav bar og forsidebillede m. titel -->
 
 
 <div class="wrapper">
@@ -54,7 +59,7 @@
           <li><a href="#top"> HOME </a></li>
           <li><a href="#portfolio"> PORTFOLIO </a></li>
           <li><a href="#me"> ME </a></li>
-          <li><a href="#contact"> CONTACT </a></li>
+          <li><a href="#contact-row"> CONTACT </a></li>
         </ul>
 
     </nav>
@@ -80,10 +85,10 @@
 
 <!-- portfolio afsnit -->
 
-<div class="container">
+<div id="portfolio" class="container">
 
   <div class="row">
-    <h1 id="portfolio">PORTFOLIO</h1>
+    <h1>PORTFOLIO</h1>
   </div>
 
   <!-- grid system -->
@@ -92,7 +97,7 @@
 
     <div class="grid-item">
       <div class="image-container">
-        <img src="productroskilde1.jpg" alt="project">
+        <img src="productroskilde.jpg" alt="project">
         <h4>PRODUCT PHOTOGRAPHY</h4>
       </div>
     </div>
@@ -106,7 +111,7 @@
 
     <div class="grid-item">
       <div class="image-container">
-        <img src="DIN1.png" alt="project">
+        <img src="DIN.png" alt="project">
         <h4>WEB-DESIGN</h4>
       </div>
     </div>
@@ -139,22 +144,43 @@
 
 <!-- sektion om mig -->
 
-<div class="me">
+<div id="me" class="me">
 
 
-  <h1 id="me">ME</h1>
+  <h1 >ME</h1>
 
   <div class="mesection">
-    <img class="cirkel" src="malthe1.jpg" alt="cirkel">
+    <img class="cirkel" src="malthe.jpg" alt="cirkel">
+
   </div>
+
 
   <h2>Malthe Roland</h2>
 
   <h3>Multimedia Designer</h3>
 
   <p>
-  ladidaladida ladidaladida ladidaladida ladidaladida
-  ladidaladida ladidaladida ladidaladida ladidaladida
+    I'm a multimedia designer student at Univversity College Lillebælt.
+
+    <br>
+    <br>
+
+    I have a passion for photography, but also color composition and graphical design.
+
+    <br>
+
+    My major skills are different kinds of photography, Adobe Photoshop, Illustrator and InDesign, together with HTML- and CSS coding.
+
+    <br>
+    <br>
+
+    If you're interested in a cooperation with me you are welcome to write me at: malthe_rr@hotmail.dk or you can fill out the contact formular in the bottom of this page.
+
+    <br>
+    <br>
+
+    Feel free to check out my Instagram, which is mainly concentrated around photography.
+
   </p>
 
 </div>
@@ -162,9 +188,9 @@
 
 <!-- kontaktformular-->
 
-<div class="row">
+<div  id="contact-row" class="contact-row">
 
-  <h1 id="contact">CONTACT</h1>
+  <h1>CONTACT</h1>
 
 </div>
 
