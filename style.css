@@ -122,9 +122,13 @@ a:hover {
   box-shadow: 0px 1px 3px rgba(0,0,0,.5);
 }
 
+a {
+  text-decoration: none;
+}
+
 .image-container img {
   width: 100%;
-  height: auto;
+  max-height: 300px;
   object-fit: cover;
 }
 
@@ -275,7 +279,7 @@ form .submit:hover {
 }
 
 .project img {
-  width: 80%;
+  width: 70%;
   max-width: 800px;
   height: auto;
 }
@@ -293,4 +297,15 @@ form .submit:hover {
   padding: 50px 0px;
   width: 80%;
   font-size: 18px;
+}
+
+/*Animation - project4 */
+
+iframe {
+object-fit: scale-down;
+width: 60%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
 }
