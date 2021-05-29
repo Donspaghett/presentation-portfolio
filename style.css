@@ -3,7 +3,6 @@
 body {
   background-color: #f0f8ff;
   margin: -10px;
-
 }
 
 
@@ -318,21 +317,15 @@ padding: 0;
 
 width: 100%;
 height: 100%;
-display: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-
+justify-content: center;
 
 }
 
 .napoleon {
   height: 863px;
   width: 1080px;
-  margin-left: auto;
+  margin-left: 15%;
   margin-right: auto;
-  display: relative;
   overflow: hidden;
 }
 
