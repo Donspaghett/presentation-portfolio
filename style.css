@@ -3,6 +3,7 @@
 body {
   background-color: #f0f8ff;
   margin: -10px;
+
 }
 
 
@@ -14,34 +15,37 @@ body {
 }
 
 .header {
+  display: flex;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  top: 0;
 }
 
-
-nav img {
-  float: left;
-  justify-content: center;
-  max-width: 100%;
-  max-height: 50px;
-  padding-left: 50px;
-  padding-top: 10px;
-}
 
 nav {
   width:100%;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  padding: 10px;
+  padding: 0 10px;
   background: rgb(255,199,0);
   background: linear-gradient(90deg, rgba(255,199,0,1) 4%, rgba(232,126,0,1) 30%);
+}
 
+nav img {
+  max-height: 50px;
+  padding: 20px 0 10px 20px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 
 li {
-  float: right;
+
   text-align: center;
   list-style: none;
 }
@@ -55,7 +59,7 @@ li a{
   text-decoration: none;
 }
 
-a:hover {
+ul a:hover {
   background-color: red;
   transition: 0.2s;
   box-shadow: 0px 1px 3px rgba(0,0,0,.5);
@@ -115,6 +119,7 @@ a:hover {
 }
 
 .grid-item {
+
   background-color: white;
   text-align: center;
   padding: 0;
@@ -128,8 +133,8 @@ a {
 }
 
 .image-container img {
-  width: 100%;
-  max-height: 300px;
+  max-width: 100%;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -143,6 +148,7 @@ a {
 .me {
   text-align: center;
   margin-top: 150px;
+  padding: 50px 200px;
   background: rgb(255,199,0);
   background: linear-gradient(90deg, rgba(255,199,0,1) 4%, rgba(232,126,0,1) 30%);
   padding: 50px 0px;
@@ -226,13 +232,13 @@ form .submit:hover {
 
 .mediarow {
   position: absolute;
+  display: flex;
   background: rgb(255,199,0);
   background: linear-gradient(90deg, rgba(255,199,0,1) 4%, rgba(232,126,0,1) 30%);
   justify-content: center;
   margin: 0;
   width: 100%;
   padding: 50px 10px;
-  display: flex;
 }
 
 .mediarow img {
@@ -240,8 +246,14 @@ form .submit:hover {
   max-height: 100%;
 }
 
+.mediarow ul {
+padding: 0;
+
+}
+
 .mediarow ul li {
   list-style: none;
+  display: inline-flex;
   justify-content: center;
   margin: 0 20px;
   font-size: 30px;
@@ -302,11 +314,75 @@ form .submit:hover {
 
 /*Animation - project4 + project 6 */
 
-iframe {
-object-fit: scale-down;
-width: 60%;
-display: block;
-margin-left: auto;
-margin-right: auto;
+.napoleon iframe {
+
+width: 100%;
+height: 100%;
+display: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+
+
+}
+
+.napoleon {
+  height: 863px;
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  display: relative;
+  overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  body {font-size: 10px;}
+
+  .portfolio {
+    width: 70%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    background-color: transparent;
+    margin: auto;
+  }
+
+  .grid-item {
+    background-color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.5);
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .cirkel {
+    width: 60%;
+    height: auto;
+    border-radius: 200%;
+    box-shadow: 0px 15px 30px rgba(0,0,0,.5);
+    margin-bottom: 20px;
+  }
+
+  .project img {
+    width: 70%;
+    max-width: 800px;
+    height: auto;
+  }
+
+
+  .napoleon {
+
+    display: none;
+  }
 
 }
